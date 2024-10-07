@@ -1,0 +1,14 @@
+
+/* ------------------------------------  */
+/*     boutons suppression contacts      */
+/* ------------------------------------  */
+a.tempo { cursor: default;  }
+p#confirm-delete a { 
+	display:block;
+	color:white;
+	font-weight:bold;
+	margin-bottom:10px;
+	text-align:center; 
+}
+p#confirm-delete a#my-confirm  { background-color:red; }
+p#confirm-delete a#my-cancel   { background-color:green; }

@@ -1,0 +1,309 @@
+/* 
+Theme name: photographe
+Theme URI: https://photographewp.io
+Author: Rolando Armelle
+Description: theme photographe
+Requires at least: Wordpress 6.4
+Version: 1.0
+*/
+
+
+:root {
+    --main-bg-color: #ffffff;
+    --primary-color: #D6C9AB;
+    --secondary-color: #D6CEAE;
+    --hover-color: #F3ECD6;
+    --text-color: #857B5A;
+    --black-color: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.slogan {
+    color: var(--primary-color); 
+    text-decoration: none;
+}
+
+.header {
+    text-align: center;
+    background-color: var(--main-bg-color);
+    color: var(--secondary-color);
+}
+
+#wrap {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    z-index: 99;
+    position: relative;
+}
+
+/* Barre de navigation */
+.nav {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar li {
+    height: auto;
+    width: 150px;
+    list-style: none;
+    font: bold 13px/1em Arial, Verdana, Helvetica;
+    background-color: var(--main-bg-color);
+    padding: 0;
+    margin: 0; 
+}
+
+.navbar a {
+    padding: 18px;
+    text-decoration: none;
+    color: var(--primary-color);
+    display: block;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    background-color: var(--hover-color);
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    color: var(--text-color);
+    width: 100%;
+}
+
+.navbar li ul {
+    display: none;
+    position:  absolute;
+}
+
+.navbar li:hover ul {
+    display: block;
+}
+
+.navbar li ul li {
+    background-color: #E8DBBF;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li ul li a {
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+}
+
+.navbar li ul li a:hover {
+    background-color: var(--hover-color);
+}
+/* Textes */
+h1, h2, h3 {
+    color: var(--text-color);
+    text-align: center;
+}
+
+h1 {
+    padding-top: 20px;
+    font-size: 36px;
+}
+
+body > header > h1 > a {
+    color: var(--text-color);
+}
+
+/* Slider Carousel */
+#home-carousel {
+    background-color: var(--main-bg-color);
+}
+
+#slider-01 img {
+    margin: 15px auto;
+}
+
+/* Articles et blog */
+.description-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.description-site h2, .description-site h3 {
+    color: var(--black-color);
+}
+
+#portfolio-front, #blog-front {
+    margin: 20px ;
+    padding: 20px;
+}
+.portfolio-accueil {
+  width: 100%;
+  padding-top: 20px;
+}
+.portfolio-accueil a:hover{
+  opacity: 0.6;
+}
+
+.card-header a {
+    font-size: 24px;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.container-portfolio {
+   display: flex;
+   flex-wrap : wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.wp-block-image {}
+
+
+
+/* Tarif */
+
+.container-tarif {
+  border: 3px solid var(--primary-color);
+  padding: 20px;
+  margin: 10px;
+
+}
+.prix {
+  font-weight: bold;
+}
+
+.titre-tarif{
+  color: var(--text-color);
+}
+
+.photographe-tarif-prix, .photographe-tarif-titre{
+  color: var(--primary-color);
+}
+
+
+
+/* Footer */
+footer {
+    background-color: var(--main-bg-color);
+    margin-top: 20px;
+    padding: 25px 0 100px;
+}
+
+.wp-block-column {
+    list-style: none;
+    text-align: center;
+}
+
+.wp-block-column ul {
+    list-style: none;
+}
+
+.wp-block-column li a {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.wp-block-column li a:hover {
+    color: var(--secondary-color);
+}
+
+.has-text-align-center a {
+    color: var(--black-color);
+}
+
+.has-text-align-center a:hover {
+    color: var(--secondary-color);
+}
+
+/* Réseaux sociaux */
+.fa {
+    padding: 20px;
+    width: 50px;
+    text-align: center;
+    margin: 5px 2px;
+    border-radius: 30px;
+}
+
+.fa:hover {
+    background-color: #E8DBBF;
+    color: var(--text-color);
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Call to Action */
+.btn, .btn a {
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.btn a:hover {
+    background-color: #E8DBBF;
+}
+
+/* Portfolio */
+.gallery {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33% - 20px);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 10px;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.5);
+    opacity: 0.6;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 320px) {
+    .gallery-item {
+         flex: 1 1 calc(100% - 10px);
+         max-width: 100%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 768px){
+    .gallery-item {
+        flex: 1 1 calc(100% - 10px);
+        max-width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+    .gallery-item {
+        flex: 1 1 calc(50% - 20px);
+  }
+
+}
